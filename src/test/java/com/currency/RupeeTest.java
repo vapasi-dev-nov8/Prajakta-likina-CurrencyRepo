@@ -3,6 +3,8 @@ package com.currency;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class RupeeTest {
     @Test
     void addRupee() {
@@ -22,13 +24,11 @@ public class RupeeTest {
     }
 
     @Test
-    void compareRupee() {
+    void rupeeCheck() {
         // Given
         Rupee rupeeTenNote = new Rupee(10);
         Rupee rupeeTenCoin = new Rupee(10);
 
-
-        // boolean  = rupeeTenNote.compare(rupeeTenCoin);
-        assertEquals(1, rupeeTenNote.compare(rupeeTenCoin));
+        assertTrue(rupeeTenNote.equals(rupeeTenCoin));
     }
 }
