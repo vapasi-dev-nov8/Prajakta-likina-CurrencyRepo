@@ -18,9 +18,7 @@ public class RupeeTest {
         //Expected
         Rupee rupeeSeven = new Rupee(7);
 
-        assertEquals(rupeeSeven.value, rupeeResult.value);
-
-
+        assertEquals(rupeeSeven, rupeeResult);
     }
 
     @Test
