@@ -9,7 +9,13 @@ public class Rupee {
 
     public Rupee add(Rupee rupee) {
 
-        Rupee rupee3 =new Rupee(value+ rupee.value);
+        Rupee rupee3 = new Rupee(value + rupee.value);
         return rupee3;
+    }
+
+    public int compare(Rupee rupeeTenCoin) {
+        if (value == rupeeTenCoin.value)
+            return 1;
+        return 0;
     }
 }
